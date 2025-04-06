@@ -7,6 +7,7 @@
     "title": "Руководство по реализации СЭМД",
     "status": "draft",
     "fhirVersion": ["5.0.0"],
+    "packageId": "ru.fhir.semd",
     "definition": {
       "page": {
         "nameUrl": "index.html",
