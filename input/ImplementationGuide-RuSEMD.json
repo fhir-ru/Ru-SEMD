@@ -1,7 +1,6 @@
 {
     "resourceType": "ImplementationGuide",
-    //"id": "RuSEMD",
-    "id": "hl7.ru.fhir.semd"
+    "id": "hl7.ru.fhir.semd",
     "url": "http://fhir.ru/ig/RuSEMD",
     "version": "0.1.0",
     "name": "RuSEMD",
