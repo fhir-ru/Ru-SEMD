@@ -1,0 +1,15 @@
+{
+    "package-id": "fhir.ru.semd",
+    "title": "Руководство по реализации СЭМД (RuSEMD)",
+    "canonical": "http://fhir.ru/ig/RuSEMD",
+    "list": [
+      {
+        "version": "0.1.0",
+        "desc": "Черновик для проверки сборки",
+        "path": "http://build.fhir.org/ig/fhir-ru/Ru-SEMD",
+        "status": "draft",
+        "current": true
+      }
+    ]
+  }
+  
