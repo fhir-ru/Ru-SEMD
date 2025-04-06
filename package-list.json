@@ -1,5 +1,5 @@
 {
-    "package-id": "hl7.fhir.ru.semd",
+    "package-id": "ru.fhir.semd",
     "title": "Руководство по реализации СЭМД (RuSEMD)",
     "canonical": "http://fhir.ru/ig/RuSEMD",
     "list": [
