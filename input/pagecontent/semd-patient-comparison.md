@@ -14,16 +14,17 @@
 | У1-12.1.4.2 | МОЖЕТ иметь серию полиса | TODO |
 | У1-12.1.4.3 | ОБЯЗАН иметь номер полиса | `identifier[omsPolicy].value` |
 
-## Адрес пациента
+## Адрес пациента (используется профиль SEMD_Address)
 
 | № требования СЭМД | Формулировка требования СЭМД | Как реализовано в FHIR профиле SEMD_Patient |
 | --- | --- | --- |
-| У1-12.1.5.1 | ОБЯЗАН иметь тип адреса | `address.extension[address-type]` (OID = 1.2.643.5.1.13.13.11.1504) |
-| У1-12.1.5.2 | ОБЯЗАН иметь адрес строкой | `address.line` |
-| У1-12.1.5.3 | ОБЯЗАН иметь код региона | `address.state` или `address.extension[stateCode]` из НСИ 2.206 |
-| У1-12.1.5.4 | ДОЛЖЕН иметь индекс | `address.postalCode` |
-| У1-12.1.5.5.1 | ОБЯЗАН иметь fias:AOGUID | `address.extension[aoguid]` |
-| У1-12.1.5.5.2 | ДОЛЖЕН иметь fias:HOUSEGUID | `address.extension[houseguid]` |
+| У1-12.1.5                          | Сведения об адресе пациента                         | `address only SEMD_Address`                 |
+| У1-12.1.5.1                        | ОБЯЗАН иметь тип адреса                             | `SEMD_Address.extension[address-type]`      |
+| У1-12.1.5.2                        | ОБЯЗАН иметь адрес строкой                          | `SEMD_Address.line`                         |
+| У1-12.1.5.3                        | ОБЯЗАН иметь код региона                            | `SEMD_Address.state` или `extension[stateCode]` |
+| У1-12.1.5.4                        | ДОЛЖЕН иметь индекс                                 | `SEMD_Address.postalCode`                   |
+| У1-12.1.5.5.1                      | ОБЯЗАН иметь fias:AOGUID                            | `SEMD_Address.extension[aoguid]`            |
+| У1-12.1.5.5.2                      | ДОЛЖЕН иметь fias:HOUSEGUID                         | `SEMD_Address.extension[houseguid]`         |
 
 ## Контакты пациента
 
