@@ -6,32 +6,13 @@
     "name": "RuSEMD",
     "title": "Руководство по реализации СЭМД",
     "status": "draft",
-    "experimental": true,
-    "date": "2025-04-06",
-    "publisher": {
-      "name": "FHIR-RU Taskforce",
-      "contact": [
-        {
-          "telecom": [
-            {
-              "system": "url",
-              "value": "https://github.com/fhir-ru/Ru-SEMD"
-            }
-          ]
-        }
-      ]
-    },
-    "description": "Руководство по реализации структурированных электронных медицинских документов (СЭМД) в формате HL7 FHIR.",
-    "fhirVersion": [
-      "5.0.0"
-    ],
+    "fhirVersion": ["5.0.0"],
     "definition": {
       "page": {
         "nameUrl": "index.html",
         "title": "Главная",
         "generation": "markdown"
-      },
-      "resource": []
+      }
     }
   }
   
