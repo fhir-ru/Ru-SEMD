@@ -12,9 +12,9 @@ Description: "Организация"
 * alias ^short = "Сокращенное наименование организации"
 * alias only string
 
-* address 0..*
-* address ^short = "Адрес организации"
-* address only Core_Address
+* contact
+  * address ^short = "Адрес организации"
+  * address only SEMD_Address
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
