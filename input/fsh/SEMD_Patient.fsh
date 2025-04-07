@@ -40,6 +40,7 @@ Description:    "Профиль пациента в рамках СЭМД"
 
 * identifier[OMS] ^short = "Полис ОМС"
   * value only string
+  * value ^short = "Номер полиса. Если есть серия, то указывается серия, нижнее подчеркивание, номер. Для документа с типом 24 серия обязательна."
   * system 1..1
   * system = "http://fhir.ru/core/systems/polis-OMS"
   * type 1..1
