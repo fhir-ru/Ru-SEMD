@@ -65,6 +65,7 @@ Description: "НСИ МЗ РФ справочник [документы удос
   * #36 "Водительское удостоверение"
 
 
+
 //Alias: $Ядро_НаборЗначений_ДокументыУдостоверяющиеЛичность = Core_Vs_Nsi_Identity_Documents
 ValueSet: Core_Vs_Nsi_Identity_Documents
 Id:       core-vs-nsi-identity-documents
