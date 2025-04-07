@@ -63,3 +63,7 @@ Description:    "Профиль пациента в рамках СЭМД"
   
 * gender ^short = "Пол пациента. Используются позиции: male | female | unknown. Other - не используется для совместимости со Справочником НСИМЗ Пол пациента"
 * gender 0..1
+
+* birthDate ^short = "Дата рождения пациента, формат YYYY-MM-DD или YYYY-MM-DDTHH:MM для новорождённых"
+* birthDate MS
+
