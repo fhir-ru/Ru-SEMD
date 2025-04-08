@@ -70,7 +70,7 @@ Description:    "Профиль пациента в рамках СЭМД"
 
 Instance: patient-novoseltsev
 InstanceOf: SEMD_Patient
-Usage: #inline
+Usage: #example
 
 * active = true
 
