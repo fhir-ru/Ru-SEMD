@@ -183,4 +183,6 @@ Usage: #example
 
 * birthDate = "1979-11-25"
 
+* managingOrganization = Reference(organization-aleyskaya-hospital)
+
 
