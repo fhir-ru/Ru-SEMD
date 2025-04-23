@@ -19,14 +19,10 @@ Description: "Организация"
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
-* identifier ^slicing.description = "Нарезка по системам: Система выдачи индивидуальных номеров налогоплательщика(ИНН), Справочник ФРМО, Система выдачи государственных регистрационных номеров ЮЛ (ИП) (ОГРН), Медицинская лицензия, ОКПО, ОКАТО"
-* identifier contains  
-  INN 0..1 and
-  FRMO 0..1 and
-  OGRN 0..1 and
-  medLicense 0..1 and
-  OKPO 0..1 and
-  OKATO 0..1
+* identifier ^slicing.description = "Нарезка по системам: Система выдачи индивидуальных номеров налогоплательщика(ИНН), Справочник ФРМО, Система выдачи государственных регистрационных номеров ЮЛ (ИП) (ОГРН)"
+* identifier contains  INN 0..1 
+  and FRMO 0..1 
+  and OGRN 0..1 
 
 * identifier[INN] ^short = "Государственный идентификационный номер налогоплательщика (ИНН)"
   * value only string
@@ -35,6 +31,8 @@ Description: "Организация"
   * type 1..1
   * type ^short = "Тип идентификатора, кодируется по Fixed value: http://terminology.hl7.org/CodeSystem/v2-0203" 
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#TAX
+//  * type = #TAX
+//  * type from http://terminology.hl7.org/CodeSystem/v2-0203
 
 * identifier[FRMO] ^short = "Федеральный реестр медицинских органзаций МЗ РФ (ФРМО)"
   * value only string
@@ -50,27 +48,6 @@ Description: "Организация"
   * type 0..1
   * type ^short = "Тип идентификатора, кодируется по Fixed value: http://fhir.ru/core/systems/ogrn"
 
-* identifier[medLicense] ^short = "Медицинская лицензия"
-  * value only string
-  * system 1..1
-  * system = "http://fhir.ru/core/systems/medlicense" 
-  * type 0..1
-  * type ^short = "Тип идентификатора"
-
-* identifier[OKPO] ^short = "Код ОКПО"
-  * value only string
-  * system 1..1
-  * system = "http://fhir.ru/core/systems/okpo" 
-  * type 0..1
-  * type ^short = "Тип идентификатора"
-
-* identifier[OKATO] ^short = "Код ОКАТО"
-  * value only string
-  * system 1..1
-  * system = "http://fhir.ru/core/systems/okato" 
-  * type 0..1
-  * type ^short = "Тип идентификатора"
-
 
 Instance: organization-aleyskaya-hospital
 InstanceOf: Core_Organization
@@ -82,16 +59,19 @@ Usage: #example
 //Атрибуты организации https://github.com/fhir-ru/core/discussions/269#discussioncomment-11519628
 
 //<!-- R [1..1] Уникальный идентификатор медицинской организации и (при наличии) уникальный идентификатор структурного подразделения -->
-* identifier[FRMO]
+//* identifier[FRMO]
+* identifier[+]
   * system = "http://fhir.ru/core/systems/frmo"
   * value = "urn:oid:1.2.643.5.1.13.13.12.2.22.1576.0.108719"
 
 //<!-- [0..1] Сведения о лицензии на осуществление медицинской деятельности -->
-* identifier[medLicense]
+* identifier[+]
   * system = "http://fhir.ru/core/systems/medlicense"
   * value = "Л041-01151-22/00328956"
   * assigner
     * display = "Министерство здравоохранения Алтайского края. Дата регистрации: 07.02.2020"
+
+
 
 //<!-- R [1..1] Наименование медицинской организации или ФИО ИП -->
 * name = "Краевое государственное бюджетное учреждение здравоохранения - Алейская центральная районная больница"
@@ -106,19 +86,21 @@ Usage: #example
 
   * address = address-aleyskaya-hospital
 
+
+
 //<!-- [0..1] Код ОГРН -->
-* identifier[OGRN]
-  * system = "http://fhir.ru/core/systems/ogrn"
+* identifier[+]
+  * system = "http://fhir.ru/core/systems/ОГРН"
   * value = "1022200509132"
   
 //<!-- [0..1] Код ОКПО -->
-* identifier[OKPO]
-  * system = "http://fhir.ru/core/systems/okpo"
+* identifier[+]
+  * system = "http://fhir.ru/core/systems/ОКПО"
   * value = "01911519"
   
 //<!-- [0..1] Код ОКАТО -->
-* identifier[OKATO]
-  * system = "http://fhir.ru/core/systems/okato"
+* identifier[+]
+  * system = "http://fhir.ru/core/systems/ОКАТО"
   * value = "01403000000"  
 
 
@@ -134,8 +116,9 @@ Usage: #inline
 * line = "Алтайский край, город Алейск, улица им В.Олешко, дом 30б"
 
   //<!-- R [1..1] Код субъекта РФ -->
-* extension[regionRF]
-  * url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/regionRF"
+  //* extension[regionRF]
+* extension[+]
+  * url = "regionRF"
   * valueCoding
     * code = #2
     * system = "urn:oid:1.2.643.5.1.13.13.99.2.20"
@@ -147,17 +130,21 @@ Usage: #inline
   
   
   ////<!-- [1..1] Идентификатор адреса по ФИАС -->
-* extension[fias]
-  * url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/fias"
+  //* extension[fias]
+* extension[+]
+  * url = "fias"
     ////<!-- R [1..1] Глобальный уникальный идентификатор адресного объекта -->
-  * extension[aoguid]
-    * url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/aoguid"
+    //* extension[aoguid]
+  * extension[0]
+    * url = "aoguid"
     * valueIdentifier
       * value = "b6d51b26-065a-4dab-abd7-cbb4124d229d"
       * system = "urn:hl7-ru:fias:aoguid"
     ////<!-- [1..1] Глобальный уникальный идентификатор дома -->
-  * extension[houseguid]
-    * url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/houseguid"
+    //* extension[houseguid]
+  * extension[+]
+    * url = "houseguid"
     * valueIdentifier
       * value = "29d553d7-1d14-4257-b34b-5b93dd3f330f"
       * system = "urn:hl7-ru:fias:houseguid"
+

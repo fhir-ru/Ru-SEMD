@@ -3,7 +3,7 @@ Extension: AddressType
 Id: address-type
 Title: "Тип адреса"
 Description: "Расширение для хранения типа адреса по НСИ 2.1504"
-* ^url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/address-type"
+* ^url = "http://example.org/fhir/StructureDefinition/address-type"
 * value[x] only CodeableConcept
 * valueCodeableConcept from http://fhir.ru/core/ValueSet/address-type (required)
 * valueCodeableConcept ^short = "Код типа адреса (по НСИ 2.1504)"
@@ -11,26 +11,14 @@ Description: "Расширение для хранения типа адреса
 * ^context.expression = "Address"
 
 // --- Расширение: Код региона ---
-Extension: RegionRF
-Id: regionRF
-Title: "Код региона РФ"
+Extension: StateCode
+Id: stateCode
+Title: "Код региона"
 Description: "Расширение для хранения кода региона по НСИ 2.206"
-* ^url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/regionRF"
+* ^url = "http://example.org/fhir/StructureDefinition/stateCode"
 * value[x] only Coding
-* valueCoding.system = "urn:oid:1.2.643.5.1.13.13.99.2.20"
+* valueCoding.system = "1.2.643.5.1.13.13.99.2.206"
 * valueCoding ^short = "Код региона (по НСИ 2.206)"
-* ^context.type = #element
-* ^context.expression = "Address"
-
-// --- Расширение: FIAS ---
-Extension: FIAS
-Id: fias
-Title: "ФИАС"
-Description: "Расширение для хранения идентификаторов ФИАС"
-* ^url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/fias"
-* extension contains
-    aoguid 1..1 and
-    houseguid 0..1
 * ^context.type = #element
 * ^context.expression = "Address"
 
@@ -39,29 +27,28 @@ Extension: AOGUID
 Id: aoguid
 Title: "FIAS AOGUID"
 Description: "Расширение для хранения идентификатора AOGUID по ФИАС"
-* ^url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/aoguid"
-* value[x] only Identifier
-* valueIdentifier.system = "urn:hl7-ru:fias:aoguid"
-* valueIdentifier ^short = "FIAS AOGUID"
-* ^context.type = #extension
-* ^context.expression = "Extension"
+* ^url = "http://example.org/fhir/StructureDefinition/aoguid"
+* value[x] only string
+* valueString ^short = "FIAS AOGUID"
+* ^context.type = #element
+* ^context.expression = "Address"
 
 // --- Расширение: FIAS HOUSEGUID ---
 Extension: HOUSEGUID
 Id: houseguid
 Title: "FIAS HOUSEGUID"
 Description: "Расширение для хранения идентификатора HOUSEGUID по ФИАС"
-* ^url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/houseguid"
-* value[x] only Identifier
-* valueIdentifier.system = "urn:hl7-ru:fias:houseguid"
-* valueIdentifier ^short = "FIAS HOUSEGUID"
-* ^context.type = #extension
-* ^context.expression = "Extension"
+* ^url = "http://example.org/fhir/StructureDefinition/houseguid"
+* value[x] only string
+* valueString ^short = "FIAS HOUSEGUID"
+* ^context.type = #element
+* ^context.expression = "Address"
 
 // --- Профиль SEMD_Address ---
-Alias: AddressTypeURL = http://fhir.ru/ig/RuSEMD/StructureDefinition/address-type
-Alias: RegionRFURL = http://fhir.ru/ig/RuSEMD/StructureDefinition/regionRF
-Alias: FIASURL = http://fhir.ru/ig/RuSEMD/StructureDefinition/fias
+Alias: AddressTypeURL = http://example.org/fhir/StructureDefinition/address-type
+Alias: StateCodeURL = http://example.org/fhir/StructureDefinition/stateCode
+Alias: AOGUIDURL = http://example.org/fhir/StructureDefinition/aoguid
+Alias: HOUSEGUIDURL = http://example.org/fhir/StructureDefinition/houseguid
 
 Profile: SEMD_Address
 Parent: Address
@@ -70,9 +57,10 @@ Title: "SEMD Address"
 Description: "Адрес, соответствующий требованиям СЭМД (3.2 Протокола лабораторного исследования)"
 
 * extension contains
-    AddressTypeURL named addressType 0..1 and
-    RegionRFURL named regionRF 0..1 and
-    FIASURL named fias 0..1
+    AddressTypeURL named address-type 1..1 and
+    StateCodeURL named stateCode 0..1 and
+    AOGUIDURL named aoguid 1..1 and
+    HOUSEGUIDURL named houseguid 0..1
 
 * line 1..* MS
 * postalCode 0..1 MS
