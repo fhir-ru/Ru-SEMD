@@ -151,13 +151,13 @@ Usage: #inline
   * url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/fias"
     ////<!-- R [1..1] Глобальный уникальный идентификатор адресного объекта -->
   * extension[aoguid]
-    * url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/aoguid"
+    * url = "aoguid"
     * valueIdentifier
       * value = "b6d51b26-065a-4dab-abd7-cbb4124d229d"
       * system = "urn:hl7-ru:fias:aoguid"
     ////<!-- [1..1] Глобальный уникальный идентификатор дома -->
   * extension[houseguid]
-    * url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/houseguid"
+    * url = "houseguid"
     * valueIdentifier
       * value = "29d553d7-1d14-4257-b34b-5b93dd3f330f"
       * system = "urn:hl7-ru:fias:houseguid"

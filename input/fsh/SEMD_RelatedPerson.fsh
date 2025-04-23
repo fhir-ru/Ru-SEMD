@@ -87,12 +87,12 @@ Description: "Пример представителя пациента для С
   * extension[fias]
     * url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/fias"
     * extension[aoguid]
-      * url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/aoguid"
+      * url = "aoguid"
       * valueIdentifier
         * value = "b3fe034d-aec8-4bea-a63e-647f987c0aed"
         * system = "urn:hl7-ru:fias:aoguid"
     * extension[houseguid]
-      * url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/houseguid"
+      * url = "houseguid"
       * valueIdentifier
         * value = "3bc96d48-b617-4a74-a8ed-9a6c147345ea"
         * system = "urn:hl7-ru:fias:houseguid"

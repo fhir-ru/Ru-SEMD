@@ -103,18 +103,8 @@ Usage: #example
 * identifier[omsPolicy]
   * value = "9876543211234567"
   * system = "http://fhir.ru/core/systems/OMS"
-  * type
-    * text = "Полис ОМС единого образца, бессрочный"
-    * coding[+]
-      * system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-      * code = #SN
-      * display = "Subscriber Number"
-      * version = "4.0.0"
-    * coding[+]
-      * system = "urn:oid:1.2.643.5.1.13.13.11.1035"
-      * code = #2
-      * display = "Полис ОМС единый, бессрочный"
-      * version = "1.3"
+  * type = http://terminology.hl7.org/CodeSystem/v2-0203#SB
+  * type.text = "Полис ОМС единого образца, бессрочный"
 
   
 //У1-12 д Адрес - https://github.com/fhir-ru/core/discussions/269#discussioncomment-10432312
@@ -145,12 +135,12 @@ Usage: #example
   * extension[fias]
     * url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/fias"
     * extension[aoguid]
-      * url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/aoguid"
+      * url = "aoguid"
       * valueIdentifier
         * value = "b3fe034d-aec8-4bea-a63e-647f987c0aed"
         * system = "urn:hl7-ru:fias:aoguid"
     * extension[houseguid]
-      * url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/houseguid"
+      * url = "houseguid"
       * valueIdentifier
         * value = "3bc96d48-b617-4a74-a8ed-9a6c147345ea"
         * system = "urn:hl7-ru:fias:houseguid"
