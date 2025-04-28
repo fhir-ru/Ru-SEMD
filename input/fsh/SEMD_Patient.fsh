@@ -31,7 +31,7 @@ Description:    "Профиль пациента в рамках СЭМД"
 * identifier[snils] ^short = "Страховой номер индивидуального лицевого счёта, СНИЛС — уникальный номер индивидуального лицевого счёта застрахованного лица в системе обязательного пенсионного страхования"
   * value only string
   * system 1..1
-  * system = "http://fhir.ru/core/systems/snils"
+  * system = "http://fhir.ru/ig/RuSEMD/systems/snils"
   * type 1..1
   * type ^short = "Тип идентификатора, кодируется по Fixed value: http://terminology.hl7.org/CodeSystem/v2-0203" 
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#SB
@@ -40,7 +40,7 @@ Description:    "Профиль пациента в рамках СЭМД"
   * value only string
   * value ^short = "Номер документа. Если есть серия, то указывается серия, нижнее подчеркивание, номер. Для документа с типом 24 серия обязательна."
   * system 1..1
-  * system = "http://fhir.ru/core/systems/passport-RF"
+  * system = "http://fhir.ru/ig/RuSEMD/systems/passport-RF"
   * type 1..1
   * type ^short = "Тип идентификатора, кодируется по НСИ"
   * type from Core_Vs_Nsi_Identity_Documents (required)
@@ -49,7 +49,7 @@ Description:    "Профиль пациента в рамках СЭМД"
   * value only string
   * value ^short = "Номер полиса. Если есть серия, то указывается серия, нижнее подчеркивание, номер."
   * system 1..1
-  * system = "http://fhir.ru/core/systems/OMS"
+  * system = "http://fhir.ru/ig/RuSEMD/systems/OMS"
   * type 1..1
   * type ^short = "Тип идентификатора, кодируется по Fixed value: http://terminology.hl7.org/CodeSystem/v2-0203" 
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#SB
@@ -84,13 +84,13 @@ Usage: #example
 //У1-12 б СНИЛС - https://github.com/fhir-ru/core/discussions/269#discussioncomment-10432246
 * identifier[snils]
   * value = "25463625426"
-  * system = "http://fhir.ru/core/systems/snils"
+  * system = "http://fhir.ru/ig/RuSEMD/systems/snils"
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#SB
 
 //У1-12 в Документ, удостоверяющий личность - https://github.com/fhir-ru/core/discussions/269#discussioncomment-10432269
 * identifier[identityDocument]
   * value = "0103 155643"
-  * system = "http://fhir.ru/core/systems/passport-RF"
+  * system = "http://fhir.ru/ig/RuSEMD/systems/passport-RF"
   * type = Core_Cs_Nsi_Identity_Document#1  
   * period
     * start = "2005-02-08"
@@ -102,7 +102,7 @@ Usage: #example
 //У1-12 г Полис ОМС  - https://github.com/fhir-ru/core/discussions/269#discussioncomment-10432286
 * identifier[omsPolicy]
   * value = "9876543211234567"
-  * system = "http://fhir.ru/core/systems/OMS"
+  * system = "http://fhir.ru/ig/RuSEMD/systems/OMS"
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#SB
   * type.text = "Полис ОМС единого образца, бессрочный"
 

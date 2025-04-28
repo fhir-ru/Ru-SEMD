@@ -3,7 +3,7 @@ Id: relatedperson-relationship
 Title: "Типы родственных связей"
 Description: "Типы родственных связей для представителя пациента"
 
-* ^url = "http://fhir.ru/core/ValueSet/relatedperson-relationship"
+* ^url = "http://fhir.ru/ig/RuSEMD/ValueSet/relatedperson-relationship"
 * ^status = #active
 * ^experimental = false
 

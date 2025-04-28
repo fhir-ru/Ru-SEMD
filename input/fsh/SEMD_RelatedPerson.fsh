@@ -8,7 +8,7 @@ Description: "Профиль представителя пациента для 
 * patient only Reference(SEMD_Patient)
 
 * relationship 0..1 MS
-* relationship from http://fhir.ru/core/ValueSet/relatedperson-relationship (required)
+* relationship from http://fhir.ru/ig/RuSEMD/ValueSet/relatedperson-relationship (required)
 
 * identifier 0..* MS
 * identifier ^slicing.discriminator.type = #pattern
@@ -17,7 +17,7 @@ Description: "Профиль представителя пациента для 
 * identifier contains
     snils 0..1
 * identifier[snils] ^short = "СНИЛС представителя пациента"
-  * system = "http://fhir.ru/core/systems/snils" (exactly)
+  * system = "http://fhir.ru/ig/RuSEMD/systems/snils" (exactly)
   * type 1..1
   * type ^short = "Тип идентификатора, кодируется по Fixed value: http://terminology.hl7.org/CodeSystem/v2-0203" 
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#SB
@@ -47,7 +47,7 @@ Description: "Пример представителя пациента для С
 
 * identifier[snils]
   * value = "12345678901"
-  * system = "http://fhir.ru/core/systems/snils"
+  * system = "http://fhir.ru/ig/RuSEMD/systems/snils"
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#SB
 
 * name

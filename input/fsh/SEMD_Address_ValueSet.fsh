@@ -3,7 +3,7 @@ Id: address-type
 Title: "Типы адресов"
 Description: "Типы адресов по НСИ 2.1504"
 
-* ^url = "http://fhir.ru/core/ValueSet/address-type"
+* ^url = "http://fhir.ru/ig/RuSEMD/ValueSet/address-type"
 * ^status = #active
 * ^experimental = false
 

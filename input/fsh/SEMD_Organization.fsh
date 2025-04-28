@@ -31,7 +31,7 @@ Description: "Организация"
 * identifier[INN] ^short = "Государственный идентификационный номер налогоплательщика (ИНН)"
   * value only string
   * system 1..1
-  * system = "http://fhir.ru/core/systems/inn" 
+  * system = "http://fhir.ru/ig/RuSEMD/systems/inn" 
   * type 1..1
   * type ^short = "Тип идентификатора, кодируется по Fixed value: http://terminology.hl7.org/CodeSystem/v2-0203" 
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#TAX
@@ -39,35 +39,35 @@ Description: "Организация"
 * identifier[FRMO] ^short = "Федеральный реестр медицинских органзаций МЗ РФ (ФРМО)"
   * value only string
   * system 1..1
-  * system = "http://fhir.ru/core/systems/frmo" 
+  * system = "http://fhir.ru/ig/RuSEMD/systems/frmo" 
   * type 0..1
   * type ^short = "Тип идентификатора, кодируется по НСИ" 
   
 * identifier[OGRN] ^short = "Основной государственный регистрационный номер юридического лица (индивидуального предпринимателя) (ОГРН)"
   * value only string
   * system 1..1
-  * system = "http://fhir.ru/core/systems/ogrn" 
+  * system = "http://fhir.ru/ig/RuSEMD/systems/ogrn" 
   * type 0..1
-  * type ^short = "Тип идентификатора, кодируется по Fixed value: http://fhir.ru/core/systems/ogrn"
+  * type ^short = "Тип идентификатора, кодируется по Fixed value: http://fhir.ru/ig/RuSEMD/systems/ogrn"
 
 * identifier[medLicense] ^short = "Медицинская лицензия"
   * value only string
   * system 1..1
-  * system = "http://fhir.ru/core/systems/medlicense" 
+  * system = "http://fhir.ru/ig/RuSEMD/systems/medlicense" 
   * type 0..1
   * type ^short = "Тип идентификатора"
 
 * identifier[OKPO] ^short = "Код ОКПО"
   * value only string
   * system 1..1
-  * system = "http://fhir.ru/core/systems/okpo" 
+  * system = "http://fhir.ru/ig/RuSEMD/systems/okpo" 
   * type 0..1
   * type ^short = "Тип идентификатора"
 
 * identifier[OKATO] ^short = "Код ОКАТО"
   * value only string
   * system 1..1
-  * system = "http://fhir.ru/core/systems/okato" 
+  * system = "http://fhir.ru/ig/RuSEMD/systems/okato" 
   * type 0..1
   * type ^short = "Тип идентификатора"
 
@@ -83,12 +83,12 @@ Usage: #example
 
 //<!-- R [1..1] Уникальный идентификатор медицинской организации и (при наличии) уникальный идентификатор структурного подразделения -->
 * identifier[FRMO]
-  * system = "http://fhir.ru/core/systems/frmo"
+  * system = "http://fhir.ru/ig/RuSEMD/systems/frmo"
   * value = "urn:oid:1.2.643.5.1.13.13.12.2.22.1576.0.108719"
 
 //<!-- [0..1] Сведения о лицензии на осуществление медицинской деятельности -->
 * identifier[medLicense]
-  * system = "http://fhir.ru/core/systems/medlicense"
+  * system = "http://fhir.ru/ig/RuSEMD/systems/medlicense"
   * value = "Л041-01151-22/00328956"
   * assigner
     * display = "Министерство здравоохранения Алтайского края. Дата регистрации: 07.02.2020"
@@ -108,17 +108,17 @@ Usage: #example
 
 //<!-- [0..1] Код ОГРН -->
 * identifier[OGRN]
-  * system = "http://fhir.ru/core/systems/ogrn"
+  * system = "http://fhir.ru/ig/RuSEMD/systems/ogrn"
   * value = "1022200509132"
   
 //<!-- [0..1] Код ОКПО -->
 * identifier[OKPO]
-  * system = "http://fhir.ru/core/systems/okpo"
+  * system = "http://fhir.ru/ig/RuSEMD/systems/okpo"
   * value = "01911519"
   
 //<!-- [0..1] Код ОКАТО -->
 * identifier[OKATO]
-  * system = "http://fhir.ru/core/systems/okato"
+  * system = "http://fhir.ru/ig/RuSEMD/systems/okato"
   * value = "01403000000"  
 
 

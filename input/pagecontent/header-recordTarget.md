@@ -6,7 +6,7 @@
 | № требования СЭМД | Формулировка требования СЭМД | Как реализовано в FHIR профиле |
 | --- | --- | --- |
 | У1-12.1.1 | ОБЯЗАН иметь идентификатор пациента в МИС | `identifier[misId]` с `system = urn:oid:<OID>.10`, тип `PN` |
-| У1-12.1.2 | ДОЛЖЕН иметь идентификатор СНИЛС | `identifier[snils]` с `system = http://fhir.ru/core/systems/snils`, тип `SB` |
+| У1-12.1.2 | ДОЛЖЕН иметь идентификатор СНИЛС | `identifier[snils]` с `system = http://fhir.ru/ig/RuSEMD/systems/snils`, тип `SB` |
 | У1-12.1.3.1 | ОБЯЗАН иметь тип документа удостоверения личности с кодом из справочника | `identifier[identityDocument].type` с `coding.system = 1.2.643.5.1.13.13.99.2.48` |
 | У1-12.1.3.2 | ДОЛЖЕН иметь серию документа; ОБЯЗАН — если код = "24" | В составе `identifier[identityDocument].value` через `_`, если `type.coding.code = 24` |
 | У1-12.1.3.3 | ОБЯЗАН иметь номер документа | `identifier[identityDocument].value`, после `_` |
@@ -48,7 +48,7 @@
 | № требования СЭМД | Формулировка требования СЭМД | Как реализовано в FHIR профиле |
 | --- | --- | --- |
 | У1-12.1.7.4 | Сведения о представителе пациента | Представлен отдельным ресурсом `RelatedPerson`, с обязательной ссылкой `RelatedPerson.patient` на пациента |
-| У1-12.1.7.4.1 | МОЖЕТ иметь id законного представителя (СНИЛС) | `RelatedPerson.identifier[snils]` с `system = http://fhir.ru/core/systems/snils` |
+| У1-12.1.7.4.1 | МОЖЕТ иметь id законного представителя (СНИЛС) | `RelatedPerson.identifier[snils]` с `system = http://fhir.ru/ig/RuSEMD/systems/snils` |
 | У1-12.1.7.4.2 | МОЖЕТ иметь ФИО представителя | `RelatedPerson.name.family`, `name.given[0]`, `name.extension[patronymic]` |
 | У1-12.1.7.4.3 | МОЖЕТ иметь контакты представителя | `RelatedPerson.telecom` с типами `phone`, `email` |
 | У1-12.1.7.4.4 | МОЖЕТ иметь адрес представителя | `RelatedPerson.address only SEMD_Address` |

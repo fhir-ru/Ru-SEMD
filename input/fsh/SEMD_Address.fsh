@@ -5,7 +5,7 @@ Title: "Тип адреса"
 Description: "Расширение для хранения типа адреса по НСИ 2.1504"
 * ^url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/address-type"
 * value[x] only CodeableConcept
-* valueCodeableConcept from http://fhir.ru/core/ValueSet/address-type (required)
+* valueCodeableConcept from http://fhir.ru/ig/RuSEMD/ValueSet/address-type (required)
 * valueCodeableConcept ^short = "Код типа адреса (по НСИ 2.1504)"
 * ^context.type = #element
 * ^context.expression = "Address"
