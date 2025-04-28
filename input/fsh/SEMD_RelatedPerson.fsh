@@ -44,7 +44,7 @@ Title: "Пример представителя пациента"
 Description: "Пример представителя пациента для СЭМД"
 
 * patient = Reference(patient-novoseltsev)
-* relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#WIFE "Жена"
+* relationship = http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#WIFE "Жена"
 
 * identifier[snils]
   * value = "12345678901"
