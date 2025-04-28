@@ -1,5 +1,9 @@
 # Терминология и идентификаторы
 
+## Примечание о разрешении URL
+
+URL-адреса, начинающиеся с `http://fhir.ru/ig/RuSEMD/`, в настоящее время не являются разрешаемыми, так как данное руководство по реализации (IG) еще не опубликовано официально. После публикации IG эти URL станут доступны.
+
 ## OID-идентификаторы
 
 В данном руководстве используются следующие OID-идентификаторы из Национальной системы идентификаторов (НСИ) Минздрава России:
@@ -14,16 +18,21 @@
 
 В руководстве используются следующие системы идентификаторов:
 
-| Система | Описание | Источник |
-|---------|----------|----------|
-| urn:hl7-ru:fias:aoguid | Идентификатор адресного объекта по ФИАС | [ФИАС](https://fias.nalog.ru/) |
-| urn:hl7-ru:fias:houseguid | Идентификатор дома по ФИАС | [ФИАС](https://fias.nalog.ru/) |
-| http://fhir.ru/ig/RuSEMD/systems/snils | СНИЛС | [ПФР](https://www.pfrf.ru/) |
-| http://fhir.ru/ig/RuSEMD/systems/passport-RF | Паспорт РФ | [МВД РФ](https://мвд.рф/) |
-| http://fhir.ru/ig/RuSEMD/systems/OMS | Полис ОМС | [ФОМС](https://www.ffoms.ru/) |
-| http://fhir.ru/ig/RuSEMD/systems/inn | ИНН | [ФНС](https://www.nalog.gov.ru/) |
-| http://fhir.ru/ig/RuSEMD/systems/frmo | ФРМО | [Минздрав РФ](https://www.rosminzdrav.ru/) |
-| http://fhir.ru/ig/RuSEMD/systems/ogrn | ОГРН | [ФНС](https://www.nalog.gov.ru/) |
-| http://fhir.ru/ig/RuSEMD/systems/medlicense | Медицинская лицензия | [Минздрав РФ](https://www.rosminzdrav.ru/) |
-| http://fhir.ru/ig/RuSEMD/systems/okpo | ОКПО | [Росстат](https://rosstat.gov.ru/) |
-| http://fhir.ru/ig/RuSEMD/systems/okato | ОКАТО | [Росстат](https://rosstat.gov.ru/) | 
+| Система | Статус | Описание | Источник |
+|---------|--------|----------|----------|
+| urn:hl7-ru:fias:aoguid | Активен | Идентификатор адресного объекта по ФИАС | [ФИАС](https://fias.nalog.ru/) |
+| urn:hl7-ru:fias:houseguid | Активен | Идентификатор дома по ФИАС | [ФИАС](https://fias.nalog.ru/) |
+| http://fhir.ru/ig/RuSEMD/systems/snils | Временный | СНИЛС | [ПФР](https://www.pfrf.ru/) |
+| http://fhir.ru/ig/RuSEMD/systems/passport-RF | Временный | Паспорт РФ | [МВД РФ](https://мвд.рф/) |
+| http://fhir.ru/ig/RuSEMD/systems/OMS | Временный | Полис ОМС | [ФОМС](https://www.ffoms.ru/) |
+| http://fhir.ru/ig/RuSEMD/systems/inn | Временный | ИНН | [ФНС](https://www.nalog.gov.ru/) |
+| http://fhir.ru/ig/RuSEMD/systems/frmo | Временный | ФРМО | [Минздрав РФ](https://www.rosminzdrav.ru/) |
+| http://fhir.ru/ig/RuSEMD/systems/ogrn | Временный | ОГРН | [ФНС](https://www.nalog.gov.ru/) |
+| http://fhir.ru/ig/RuSEMD/systems/medlicense | Временный | Медицинская лицензия | [Минздрав РФ](https://www.rosminzdrav.ru/) |
+| http://fhir.ru/ig/RuSEMD/systems/okpo | Временный | ОКПО | [Росстат](https://rosstat.gov.ru/) |
+| http://fhir.ru/ig/RuSEMD/systems/okato | Временный | ОКАТО | [Росстат](https://rosstat.gov.ru/) |
+
+### Статусы систем идентификаторов
+
+- **Активен**: URL является разрешаемым и доступен для использования
+- **Временный**: URL временно не является разрешаемым, так как IG еще не опубликован. После публикации IG URL станет доступен. 
