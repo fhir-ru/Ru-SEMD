@@ -12,16 +12,16 @@ Description: "Типы родственных связей для предста
 * ^expansion.parameter[0].valueCode = #ru
 
 * include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem
-* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#WIFE
-* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#HUSB
-* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#SON
-* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#DAU
-* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#FTH
-* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#MTH
-* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#BRO
-* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#SIS
-* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#GUARD
-* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#PARNT
-* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#1
-* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#2
-* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#3
+* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem where code = #WIFE
+* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem where code = #HUSB
+* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem where code = #SON
+* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem where code = #DAU
+* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem where code = #FTH
+* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem where code = #MTH
+* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem where code = #BRO
+* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem where code = #SIS
+* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem where code = #GUARD
+* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem where code = #PARNT
+* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem where code = #1
+* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem where code = #2
+* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem where code = #3
