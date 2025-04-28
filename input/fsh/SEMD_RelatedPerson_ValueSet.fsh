@@ -7,7 +7,8 @@ Description: "Типы родственных связей для предста
 * ^status = #active
 * ^experimental = false
 * ^language = #ru
+* ^expansion.timestamp = "2024-04-28T00:00:00Z"
 * ^expansion.parameter[0].name = #displayLanguage
-* ^expansion.parameter[0].valueString = #ru
+* ^expansion.parameter[0].valueCode = #ru
 
 * include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem
