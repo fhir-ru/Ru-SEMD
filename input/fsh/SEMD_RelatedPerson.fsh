@@ -49,22 +49,12 @@ Description: "Пример представителя пациента для С
     * code = #WIFE
     * system = "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
     * display = "Жена"
-    * display.extension[0]
-      * url = "http://hl7.org/fhir/StructureDefinition/translation"
-      * extension[lang]
-        * url = "lang"
-        * valueCode = #ru
-      * extension[content]
-        * url = "content"
-        * valueString = "Жена"
-    * display.extension[1]
-      * url = "http://hl7.org/fhir/StructureDefinition/translation"
-      * extension[lang]
-        * url = "lang"
-        * valueCode = #en-US
-      * extension[content]
-        * url = "content"
-        * valueString = "wife"
+    * designation[0]
+      * language = #ru
+      * value = "Жена"
+    * designation[1]
+      * language = #en-US
+      * value = "wife"
 
 * identifier[snils]
   * value = "12345678901"

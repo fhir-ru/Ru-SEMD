@@ -8,6 +8,7 @@ Description: "Коды и их переводы для типов родстве
 * ^experimental = false
 * ^caseSensitive = true
 * ^content = #complete
+* ^language = #ru
 
 // Family member relationships from v3-RoleCode
 * #WIFE "Жена"
