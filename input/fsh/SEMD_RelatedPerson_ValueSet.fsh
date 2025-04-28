@@ -11,4 +11,17 @@ Description: "Типы родственных связей для предста
 * ^expansion.parameter[0].name = #displayLanguage
 * ^expansion.parameter[0].valueCode = #ru
 
-* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem
+* include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem where
+    code = #WIFE or
+    code = #HUSB or
+    code = #SON or
+    code = #DAU or
+    code = #FTH or
+    code = #MTH or
+    code = #BRO or
+    code = #SIS or
+    code = #GUARD or
+    code = #PARNT or
+    code = #1 or
+    code = #2 or
+    code = #3
