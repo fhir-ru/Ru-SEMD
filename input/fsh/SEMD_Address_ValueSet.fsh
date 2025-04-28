@@ -1,7 +1,7 @@
 ValueSet: AddressTypeValueSet
 Id: address-type
 Title: "Типы адресов"
-Description: "Типы адресов по НСИ 2.1504"
+Description: "Типы адресов по НСИ 2.1504. Источник: [НСИ Минздрава](https://nsi.rosminzdrav.ru/dictionaries/1.2.643.5.1.13.13.11.1504/passport/1.4)"
 
 * ^url = "http://fhir.ru/ig/RuSEMD/ValueSet/address-type"
 * ^status = #active
