@@ -7,5 +7,7 @@ Description: "Типы родственных связей для предста
 * ^status = #active
 * ^experimental = false
 * ^language = #ru
+* ^expansion.parameter[0].name = #displayLanguage
+* ^expansion.parameter[0].valueString = #ru
 
 * include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem
