@@ -11,10 +11,10 @@ Description: "Коды и их переводы для типов родстве
 * ^language = #ru
 
 // Set the default language for display to Russian
-* ^property[0].code = #display
-* ^property[0].uri = "http://hl7.org/fhir/ValueSet/designation-use"
-* ^property[0].description = "The display value for this code"
-* ^property[0].type = #string
+//* ^property[0].code = #display
+//* ^property[0].uri = "http://hl7.org/fhir/ValueSet/designation-use"
+//* ^property[0].description = "The display value for this code"
+//* ^property[0].type = #string
 
 // Family member relationships from v3-RoleCode
 * #WIFE "Жена"
