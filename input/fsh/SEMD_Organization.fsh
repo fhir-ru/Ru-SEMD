@@ -1,8 +1,8 @@
 Profile: Core_Organization
 Id: core-organization
 Parent: Organization
-Title: "Core Organization (Организация)"
-Description: "Организация"
+Title: "Организация (Core Organization)"
+Description: "Дополнительно к стандартному описанию Организации, определен порядок использования ИНН, ОГРН, ФРМО, Медицинской лицензии, ОКПО, ОКАТО в качестве идентификаторов. TODO: исправить: ОКАТО - не идентификатор!"
 
 * name 1..1 MS
 * name ^short = "Полное название организации"
@@ -74,6 +74,9 @@ Description: "Организация"
 
 Instance: organization-aleyskaya-hospital
 InstanceOf: Core_Organization
+Title: "Пример Организация - Алейская больница"
+Description: "Алейская больница, из примера к СЭМД ПЛИ вер.5. В СЭМД ПЛИ выступает как организация пациента, направляющая, хранитель документа, место работы исполнителей"
+
 Usage: #example
 
 
