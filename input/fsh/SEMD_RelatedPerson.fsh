@@ -9,7 +9,7 @@ Description: "Профиль представителя пациента для 
 
 * relationship 0..1 MS
 * relationship from http://fhir.ru/ig/RuSEMD/ValueSet/relatedperson-relationship (required)
-* relationship.coding.system from http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem (required)
+* relationship.coding.system = "http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem" (exactly)
 
 * identifier 0..* MS
 * identifier ^slicing.discriminator.type = #pattern
@@ -44,7 +44,13 @@ Title: "Пример представителя пациента"
 Description: "Пример представителя пациента для СЭМД"
 
 * patient = Reference(patient-novoseltsev)
-* relationship = http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#WIFE "Жена"
+* relationship.coding[0] = http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#WIFE
+* relationship.coding[0].display = "Жена"
+* relationship.coding[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/translation"
+* relationship.coding[0].extension[0].extension[0].url = "lang"
+* relationship.coding[0].extension[0].extension[0].valueCode = #ru
+* relationship.coding[0].extension[0].extension[1].url = "content"
+* relationship.coding[0].extension[0].extension[1].valueString = "Жена"
 
 * identifier[snils]
   * value = "12345678901"
