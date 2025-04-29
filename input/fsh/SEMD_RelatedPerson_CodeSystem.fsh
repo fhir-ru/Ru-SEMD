@@ -12,7 +12,7 @@ Description: "Коды и их переводы для типов родстве
 
 // Set the default language for display to Russian
 * ^property[0].code = #display
-* ^property[0].uri = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* ^property[0].uri = "http://hl7.org/fhir/designation-usage"
 * ^property[0].description = "The display value for this code"
 * ^property[0].type = #string
 
