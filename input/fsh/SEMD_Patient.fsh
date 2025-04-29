@@ -1,8 +1,8 @@
 Profile:        SEMD_Patient
 Parent:         Patient
 Id:             semd-patient
-Title:          "Пациент СЭМД"
-Description:    "Профиль пациента в рамках СЭМД"
+Title:          "Пациент"
+Description:    "Профиль Patient для СЭМД. Определен порядок написания ФИО, идентфикаторы: Номер в МИС, СНИЛС, удостоверение личности, полис ОМС. TODO: исправить system дя удостоверения личности."
 
 * address ^short = "Адрес пациента"
 * address 0..1 MS
@@ -38,7 +38,7 @@ Description:    "Профиль пациента в рамках СЭМД"
 
 * identifier[identityDocument] ^short = "Документ удостоверяющий личность"
   * value only string
-  * value ^short = "Номер документа. Если есть серия, то указывается серия, нижнее подчеркивание, номер. Для документа с типом 24 серия обязательна."
+  * value ^short = "Номер документа. Если есть серия, то указывается серия, пробел, номер. Внутренние пробелы в серии и номере удаляются. Для документа с типом 24 серия обязательна."
   * system 1..1
   * system = "http://fhir.ru/ig/RuSEMD/systems/passport-RF"
   * type 1..1
@@ -68,6 +68,8 @@ Description:    "Профиль пациента в рамках СЭМД"
 
 Instance: patient-novoseltsev
 InstanceOf: SEMD_Patient
+Title:          "Пример пациента - Новосельцев"
+Description:    "Пациент Новосельцев из примера к СЭМД ПЛИ ред.5"
 Usage: #example
 
 * active = true

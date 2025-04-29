@@ -1,8 +1,8 @@
 Profile: SEMD_RelatedPerson
 Parent: RelatedPerson
 Id: semd-relatedperson
-Title: "SEMD Related Person"
-Description: "Профиль представителя пациента для СЭМД"
+Title: "Представитель пациента"
+Description: "Профиль RelatedPerson для СЭМД. Определено использвание СНИЛС как идентификатора, справочник типов родственных связей."
 
 * patient 1..1 MS
 * patient only Reference(SEMD_Patient)
@@ -24,10 +24,10 @@ Description: "Профиль представителя пациента для 
   * type = http://terminology.hl7.org/CodeSystem/v2-0203#SB
 
 
-* name ^short = "ФИО пациента"
-  * family ^short = "Фамилия пациента"
-  * given ^short = "Имя и отчество пациента. Первым должно идти имя, вторым - отчество"
-  * use ^short = "Тип имени пациента. Рекомендуемое значение: official"
+* name ^short = "ФИО представителя пациента"
+  * family ^short = "Фамилия представителя пациента"
+  * given ^short = "Имя и отчество представителя пациента. Первым должно идти имя, вторым - отчество"
+  * use ^short = "Тип имени представителя пациента. Рекомендуемое значение: official"
 
 * telecom 0..* MS
 * telecom.system from http://hl7.org/fhir/ValueSet/contact-point-system (required)
@@ -41,7 +41,7 @@ Instance: relatedperson-example
 InstanceOf: SEMD_RelatedPerson
 Usage: #example
 Title: "Пример представителя пациента"
-Description: "Пример представителя пациента для СЭМД"
+Description: "Жена пациента Новосельцева"
 
 * patient = Reference(patient-novoseltsev)
 * relationship = http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem#WIFE

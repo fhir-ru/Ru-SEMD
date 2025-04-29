@@ -1,7 +1,7 @@
 CodeSystem: SEMD_RelatedPerson_CodeSystem
 Id: semd-relatedperson-codesystem
-Title: "Коды родственных связей для СЭМД"
-Description: "Коды и их переводы для типов родственных связей в СЭМД"
+Title: "Типы родственных связей"
+Description: "Коды родственных связей по справочнику HL7 и их переводы для СЭМД"
 
 * ^url = "http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem"
 * ^status = #active

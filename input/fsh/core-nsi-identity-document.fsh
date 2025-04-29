@@ -1,6 +1,6 @@
 Instance:   core-ns-nsi-identity-document
 InstanceOf: NamingSystem
-Title: "Core NamingSystem NSI identity document (Документы удостоверяющие личность)"
+Title: "Документы удостоверяющие личность"
 Usage: #definition
 
 * name =   "Core_Ns_Nsi_Identity_Document"
@@ -41,7 +41,7 @@ Usage: #definition
 //Alias: $МЗРФ_Справочник_ДокументыУдостоверяющиеЛичность = Core_Cs_Nsi_Identity_Document
 CodeSystem: Core_Cs_Nsi_Identity_Document
 Id:         core-cs-nsi-identity-document
-Title: "Core CodeSystem NSI Identity Documents (Документы удостоверяющие личность)"
+Title: "Документы удостоверяющие личность"
 Description: "НСИ МЗ РФ справочник [документы удостоверяющие личность](http://fhir.ru/core/NamingSystem/core-ns-nsi-identity-document)"
 
 * ^experimental = false
@@ -69,7 +69,7 @@ Description: "НСИ МЗ РФ справочник [документы удос
 //Alias: $Ядро_НаборЗначений_ДокументыУдостоверяющиеЛичность = Core_Vs_Nsi_Identity_Documents
 ValueSet: Core_Vs_Nsi_Identity_Documents
 Id:       core-vs-nsi-identity-documents
-Title: "Core ValueSet NSI identity documents (Документы удостоверяющие личность)"
+Title: "Документы удостоверяющие личность"
 Description: "Документы, удостоверяющие личность - набор из всех значений системы кодирования"
 
 * ^experimental = false

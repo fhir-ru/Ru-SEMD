@@ -37,7 +37,7 @@ Description: "Расширение для хранения идентифика�
 // --- Расширение: FIAS AOGUID ---
 Extension: AOGUID
 Id: aoguid
-Title: "FIAS AOGUID"
+Title: "ФИАС AOGUID"
 Description: "Расширение для хранения идентификатора AOGUID по ФИАС"
 * ^url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/aoguid"
 * value[x] only Identifier
@@ -49,7 +49,7 @@ Description: "Расширение для хранения идентифика�
 // --- Расширение: FIAS HOUSEGUID ---
 Extension: HOUSEGUID
 Id: houseguid
-Title: "FIAS HOUSEGUID"
+Title: "ФИАС HOUSEGUID"
 Description: "Расширение для хранения идентификатора HOUSEGUID по ФИАС"
 * ^url = "http://fhir.ru/ig/RuSEMD/StructureDefinition/houseguid"
 * value[x] only Identifier
@@ -66,8 +66,8 @@ Alias: FIASURL = http://fhir.ru/ig/RuSEMD/StructureDefinition/fias
 Profile: SEMD_Address
 Parent: Address
 Id: semd-address
-Title: "SEMD Address"
-Description: "Адрес, соответствующий требованиям СЭМД (3.2 Протокола лабораторного исследования)"
+Title: "Адрес"
+Description: "Профиль Address, соответствующий требованиям СЭМД. Содержит расширения для кодов ФИАС, типа адреса и кода региона."
 
 * extension contains
     AddressTypeURL named addressType 0..1 and
