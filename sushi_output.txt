@@ -39,6 +39,6 @@ info  The sample-ig located at https://github.com/FHIR/sample-ig contains script
 |  -------------------------------------------------------------  |
 |                                                                 |
 ===================================================================
-| Cool and So-fish-ticated!              0 Errors      0 Warnings |
+| Swish! Nothing but fishnet.            0 Errors      0 Warnings |
 ===================================================================
 

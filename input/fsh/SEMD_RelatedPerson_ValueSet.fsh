@@ -12,6 +12,7 @@ Description: "Типы родственных связей для предста
 * include codes from system http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem
 
 // Explicit expansion
+* ^expansion.timestamp = "2025-04-29T11:55:00+03:00"
 * ^expansion.contains[+].system = "http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem"
 * ^expansion.contains[=].code = #WIFE
 * ^expansion.contains[=].display = "Жена"
