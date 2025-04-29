@@ -10,6 +10,12 @@ Description: "Коды и их переводы для типов родстве
 * ^content = #complete
 * ^language = #ru
 
+// Set the default language for display to Russian
+* ^property[0].code = #display
+* ^property[0].uri = "http://terminology.hl7.org/CodeSystem/designation-usage"
+* ^property[0].description = "The display value for this code"
+* ^property[0].type = #string
+
 // Family member relationships from v3-RoleCode
 * #WIFE "Жена"
   * ^designation[0].language = #ru
@@ -102,4 +108,4 @@ Description: "Коды и их переводы для типов родстве
   * ^designation[0].use = #primary
   * ^designation[0].value = "Попечитель"
   * ^designation[1].language = #en-US
-  * ^designation[1].value = "trustee" 
+  * ^designation[1].value = "trustee"
