@@ -39,6 +39,6 @@ info  The sample-ig located at https://github.com/FHIR/sample-ig contains script
 |  -------------------------------------------------------------  |
 |                                                                 |
 ===================================================================
-| You've found your sea legs.            0 Errors      0 Warnings |
+| O-fish-ally error free!                0 Errors      0 Warnings |
 ===================================================================
 

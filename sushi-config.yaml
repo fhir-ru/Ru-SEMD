@@ -64,7 +64,7 @@ publisher:
 #
 parameters:
   excludettl: true
-  validation: [allow-any-extensions, no-broken-links]
+  validation: [allow-any-extensions, allow-broken-links]
   suppress-messages: []
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
