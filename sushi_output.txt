@@ -39,6 +39,6 @@ info  The sample-ig located at https://github.com/FHIR/sample-ig contains script
 |  -------------------------------------------------------------  |
 |                                                                 |
 ===================================================================
-| O-fish-ally error free!                0 Errors      0 Warnings |
+| You've proven any-fin is possible.     0 Errors      0 Warnings |
 ===================================================================
 
