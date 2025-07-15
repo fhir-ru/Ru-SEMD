@@ -4,23 +4,23 @@ info    /Users/ekogan/git3/RuSEMD
 info  No output path specified. Output to .
 info  Using configuration file: /Users/ekogan/git3/RuSEMD/sushi-config.yaml
 info  Importing FSH text...
-info  Preprocessed 8 documents with 3 aliases.
-info  Imported 14 definitions and 5 instances.
+info  Preprocessed 48 documents with 3 aliases.
+info  Imported 95 definitions and 84 instances.
 info  Resolved hl7.fhir.uv.tools.r5#latest to concrete version 0.5.0
 info  Loaded hl7.fhir.uv.tools.r5#0.5.0 with 96 resources
-info  Resolved hl7.terminology.r5#latest to concrete version 6.2.0
-info  Loaded hl7.terminology.r5#6.2.0 with 4323 resources
+info  Resolved hl7.terminology.r5#latest to concrete version 6.5.0
+info  Loaded hl7.terminology.r5#6.5.0 with 4392 resources
 info  Resolved hl7.fhir.uv.extensions.r5#latest to concrete version 5.2.0
 info  Loaded hl7.fhir.uv.extensions.r5#5.2.0 with 759 resources
 info  Loaded hl7.fhir.r5.core#5.0.0 with 2968 resources
 info  Loaded virtual package sushi-local#LOCAL with 0 resources
 info  Converting FSH to FHIR resources...
-info  Converted 9 FHIR StructureDefinitions.
-info  Converted 2 FHIR CodeSystems.
-info  Converted 3 FHIR ValueSets.
-info  Converted 5 FHIR instances.
+info  Converted 45 FHIR StructureDefinitions.
+info  Converted 23 FHIR CodeSystems.
+info  Converted 27 FHIR ValueSets.
+info  Converted 84 FHIR instances.
 info  Exporting FHIR resources as JSON...
-info  Exported 18 FHIR resources as JSON.
+info  Exported 167 FHIR resources as JSON.
 info  Assembling Implementation Guide sources...
 info  Generated ImplementationGuide-ru.fhir.semd.json
 info  Assembled Implementation Guide sources; ready for IG Publisher.
@@ -30,15 +30,19 @@ info  The sample-ig located at https://github.com/FHIR/sample-ig contains script
 |  -------------------------------------------------------------  |
 | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |
 | |-------------------------------------------------------------| |
-| |       4       |      5       |      0       |       0       | |
+| |      35       |      10      |      0       |       0       | |
 |  -------------------------------------------------------------  |
 |  -------------------------------------------------------------  |
 | |      ValueSets     |    CodeSystems    |     Instances      | |
 | |-------------------------------------------------------------| |
-| |         3          |         2         |         5          | |
+| |         27         |        23         |         84         | |
 |  -------------------------------------------------------------  |
 |                                                                 |
 ===================================================================
-| You've proven any-fin is possible.     0 Errors      0 Warnings |
+| You're making waves now!               0 Errors      0 Warnings |
+===================================================================
+|    You are using SUSHI version 3.15.0, but the latest stable    |
+| release is version 3.16.3. To install the latest release, run:  |
+|                    npm install -g fsh-sushi                     |
 ===================================================================
 

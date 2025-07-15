@@ -3,7 +3,7 @@ Id: semd-relatedperson-codesystem
 Title: "Типы родственных связей"
 Description: "Коды родственных связей по справочнику HL7 и их переводы для СЭМД"
 
-* ^url = "http://fhir.ru/ig/RuSEMD/CodeSystem/semd-relatedperson-codesystem"
+* ^url = "https://fhir.ru/ig/semd/CodeSystem/semd-relatedperson-codesystem"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true

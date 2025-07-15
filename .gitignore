@@ -14,6 +14,9 @@ Thumbs.db
 *.swp
 *.swo
 
+# Local materials
+local-materials/
+
 # Logs
 *.log
 npm-debug.log*
