@@ -942,7 +942,7 @@ Usage: #example
 //сведения этого ресурса используются как для У1-22 (случай обслуживания, см ниже), так и в У1-21 - документируемое событие - [https://github.com/fhir-ru/core/discussions/278#discussion-7315853](https://github.com/fhir-ru/core/discussions/278#discussion-7315853)
 
 //добавлено по смыслу ресурса Encounter  
-* status = #finished
+* status = #completed
 
 * subject = Reference(patient-novoseltsev)
 
