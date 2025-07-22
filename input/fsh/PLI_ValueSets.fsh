@@ -6,7 +6,7 @@ Description: "Типы материалов исследования по НСИ
 
 * ^url = "https://fhir.ru/ig/semd/ValueSet/pli-vs-nsi-specimen-types"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * include codes from system urn:oid:1.2.643.5.1.13.13.99.2.1019
 
@@ -18,7 +18,7 @@ Description: "Лабораторные тесты ФСЛИ по НСИ 1.2.643.5
 
 * ^url = "https://fhir.ru/ig/semd/ValueSet/pli-vs-nsi-fsli-tests"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * include codes from system urn:oid:1.2.643.5.1.13.13.11.1080
 
@@ -30,7 +30,7 @@ Description: "Коды интерпретации лабораторных ре�
 
 * ^url = "https://fhir.ru/ig/semd/ValueSet/pli-vs-nsi-interpretation-codes"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * include codes from system urn:oid:1.2.643.5.1.13.13.99.2.257
 
@@ -42,6 +42,6 @@ Description: "Витальные параметры по НСИ 1.2.643.5.1.13.1
 
 * ^url = "https://fhir.ru/ig/semd/ValueSet/vitalparam-vs-nsi-vital-parameters"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
-* include codes from system urn:oid:1.2.643.5.1.13.13.99.2.262 
+* include codes from system urn:oid:1.2.643.5.1.13.13.99.2.262

@@ -23,6 +23,8 @@ info  Converted 84 FHIR instances.
 info  Exporting FHIR resources as JSON...
 info  Exported 167 FHIR resources as JSON.
 info  Assembling Implementation Guide sources...
+error ig.ini file must contain an [IG] section with no other sections
+  File: /Users/ekogan/git3/RuSEMD/ig.ini
 info  Generated ImplementationGuide-ru.fhir.semd.json
 info  Assembled Implementation Guide sources; ready for IG Publisher.
 info  The sample-ig located at https://github.com/FHIR/sample-ig contains scripts useful for downloading and running the IG Publisher.
@@ -40,7 +42,7 @@ info  The sample-ig located at https://github.com/FHIR/sample-ig contains script
 |  -------------------------------------------------------------  |
 |                                                                 |
 ===================================================================
-| Are you in a no-wind situation?        0 Errors       1 Warning |
+| Are you lost at sea?                    1 Error       1 Warning |
 ===================================================================
 |    You are using SUSHI version 3.15.0, but the latest stable    |
 | release is version 3.16.3. To install the latest release, run:  |

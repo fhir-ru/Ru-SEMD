@@ -5,6 +5,6 @@ Description: "Типы адресов по НСИ 2.1504. Источник: [Н�
 
 * ^url = "https://fhir.ru/ig/semd/ValueSet/address-type"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * include codes from system urn:oid:1.2.643.5.1.13.13.11.1504

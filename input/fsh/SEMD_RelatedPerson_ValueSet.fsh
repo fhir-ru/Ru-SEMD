@@ -5,7 +5,7 @@ Description: "Типы родственных связей для предста
 
 * ^url = "https://fhir.ru/ig/semd/ValueSet/relatedperson-relationship"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^language = #ru
 
 // Include all codes from the code system
