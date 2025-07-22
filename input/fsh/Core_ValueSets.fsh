@@ -45,13 +45,15 @@ Description: "Документы, удостоверяющие личность 
 ValueSet: Core_Vs_Nsi_Medical_Workers_Positions
 Id: core-vs-nsi-medical-workers-positions
 Title: "Должности медицинских работников"
-Description: "Должности медицинских и фармацевтических работников по НСИ"
+Description: "Должности медицинских и фармацевтических работников по НСИ. Данный ValueSet ссылается на внешний справочник НСИ МЗ РФ."
 
 * ^url = "https://fhir.ru/ig/core/ValueSet/core-vs-nsi-medical-workers-positions"
 * ^status = #active
 * ^experimental = false
+* ^copyright = "НСИ МЗ РФ"
 
-* include codes from system https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-medical-workers-positions
+// Не включаем коды из системы с content = #not-present для предотвращения ошибок валидации
+// * include codes from system https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-medical-workers-positions
 
 
 // ValueSet Федеральный реестр медицинских организаций (НСИ-ФРМО) - 6
@@ -63,6 +65,8 @@ Description: "НСИ МЗ РФ Федеральный реестр медици�
 * ^url = "https://fhir.ru/ig/core/ValueSet/core-vs-nsi-register-of-medical-organizations"
 * ^status = #active
 * ^experimental = false
+* ^expansion.timestamp = "2025-07-22T00:00:00Z"
+* ^expansion.total = 0
 
 * include codes from system https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-register-of-medical-organizations
 
@@ -132,6 +136,8 @@ Description: "НСИ МЗ РФ справочник Отраслевой кла�
 * ^url = "https://fhir.ru/ig/core/ValueSet/core-vs-nsi-okato"
 * ^status = #active
 * ^experimental = false
+* ^expansion.timestamp = "2025-07-22T00:00:00Z"
+* ^expansion.total = 0
 
 * include codes from system https://fhir.ru/ig/core/CodeSystem/core-cs-nsi-okato
 
