@@ -19,7 +19,7 @@ Description: "Руководства по реализации СЭМД"
 // Секции СЭМД - 2
 
 CodeSystem: SEMD_Cs_Cda_Section_Codes
-Id: semd-cs-nsi-cda-section-codes
+Id: semd-cs-cda-section-codes
 Title: "Коды секций СЭМД"
 Description: "Коды секций для структурированных электронных медицинских документов"
 * ^url = "https://fhir.ru/ig/semd/CodeSystem/semd-cs-cda-section-codes"
