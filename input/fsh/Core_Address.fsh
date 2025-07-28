@@ -16,7 +16,7 @@ Description: "Базовый профиль адреса для российск
 * extension[addressType] ^short = "Тип адреса"
 
 * text ^short = "Текстовое представление адреса"
-
+ 
 * postalCode ^short = "Почтовый индекс"
 
 * state ^short = "Регион"
