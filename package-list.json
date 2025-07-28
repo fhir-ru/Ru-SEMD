@@ -1,0 +1,15 @@
+{
+  "package-id": "ru.fhir.semd",
+  "canonical": "https://fhir.ru/ig/semd",
+  "title": "Russian FHIR Semantic Model IG",
+  "introduction": "IG for semantic data model based on FHIR.",
+  "version": "0.1.0",
+  "list": [
+    {
+      "version": "current",
+      "desc": "Continuous Integration Build",
+      "path": "https://build.fhir.org/ig/fhir-ru/Ru-SEMD/",
+      "status": "ci-build"
+    }
+  ]
+}
